@@ -1,0 +1,19 @@
+{
+  "name": "temperature-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cron": "^1.1.0",
+    "ds18b20": "^0.1.0",
+    "express": "^4.13.4",
+    "lodash": "^4.6.1"
+  }
+}
