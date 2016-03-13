@@ -3,6 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const readings = require('./readings');
+const config = require('./config');
 
 const app = express();
 
@@ -18,7 +19,7 @@ app.get('/temperature', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
+app.listen(config.server.port, () => {
   console.log('Waiting for connections...');
 });
 
